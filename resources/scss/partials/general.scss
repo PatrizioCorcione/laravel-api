@@ -1,0 +1,66 @@
+nav{
+    height: 70px;
+    border-bottom: 2px solid #0e70ff;
+}
+.aside{
+    width: 240px;
+    height: calc(100vh - 70px) !important;
+    li{
+        &:hover{
+            background-color: #0e70ff;
+            border-bottom: 5px solid #0e70ff ;
+        }
+
+        i{
+            width: 20px;
+            margin-right: 8px;
+        }
+    }
+}
+.cassafrumbolo{
+    height: calc(100vh - 70px) !important;
+}
+.table{
+    td{
+        font-size: 0.8rem;
+    }
+    input{
+        border: none;
+        cursor: pointer;
+    }
+}
+.index-btn{
+    padding: 2px 7px !important;
+}
+.t-area-he{
+    height: 115px !important;
+}
+.home-adm{
+    background-color: rgb(25, 25, 25);
+}
+.pagination{
+    --bs-pagination-hover-bg:#212529;
+    --bs-pagination-bg:rgb(25, 25, 25);
+    --bs-pagination-focus-bg:#212529;
+    --bs-pagination-disabled-bg:#212529;
+
+}
+.text-muted{
+    --bs-secondary-color:white;
+}
+input[type="file"]::file-selector-button {
+    background-color: $primary;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#navbarNavDropdown{
+
+    li:hover{
+        background-color: #0e70ff;
+        border-bottom: 5px solid #0e70ff ;
+
+    }
+}
