@@ -21,7 +21,8 @@
       <div class="form-floating mb-3">
 
         <textarea value="" name="description"
-          class="text-secondary rounded-2 me-2 bg-black border-primary px-2 w-100 t-area-he @error('description')
+          class="text-secondary rounded-2 me-2 bg-black border-primary px-2 w-100 t-area-he 
+          @error('description')
         is-invalid
         @enderror"
           id="floatingTextarea2Disabled">{{ old('description', $project?->description) }}</textarea>
