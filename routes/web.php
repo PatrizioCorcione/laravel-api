@@ -30,10 +30,15 @@ Route::middleware(['auth', 'verified'])
         Route::get('/', [DashboardController::class, 'index'])->name('home');
         Route::resource('project', ProjectController::class);
         Route::resource('technologies', TechnoController::class)->except([
-            'create', 'show', 'edit'
+            'create',
+            'show',
+            'edit'
         ]);
         Route::resource('types', TypeController::class)->except([
-            'create', 'show', 'edit', 'index'
+            'create',
+            'show',
+            'edit',
+            'index'
         ]);
         Route::get('orderby/{direction}/{column}', [ProjectController::class, 'orderby'])->name('orderby');
     });
