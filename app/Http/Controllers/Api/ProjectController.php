@@ -13,7 +13,7 @@ class ProjectController extends Controller
     public function index()
     {
         $projects = Project::with(['type', 'technologies'])
-            ->orderBy('id', 'desc') // Ordina per 'created_at' in modo discendente
+            ->orderBy('id', 'asc') // Ordina per 'created_at' in modo discendente
             ->get();
 
         return response()->json($projects);
