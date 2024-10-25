@@ -12,10 +12,11 @@ class ProjectController extends Controller
 {
     public function index()
     {
-        $projectDescriptions = Project::orderBy('id', 'desc')
-            ->get(['description']);
+        $projects = Project::with(['type', 'technologies'])
+            ->orderBy('id', 'desc') // Ordina per 'created_at' in modo discendente
+            ->get();
 
-        return response()->json($projectDescriptions);
+        return response()->json($projects);
     }
 
 
